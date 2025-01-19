@@ -64,7 +64,7 @@ const CitiesProvider = ({ children }) => {
   async function deleteCity(id) {
     try {
       setIsLoading(true);
-      await fetch(`https://cities-data-7fo9.onrender.com/${id}`, {
+      await fetch(`https://cities-data-1-ibt6.onrender.com/cities/${id}`, {
         method: "DELETE",
       });
 

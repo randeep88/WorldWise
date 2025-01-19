@@ -1,11 +1,10 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { useAuth } from "../Context/AuthContext";
-import Navbar from "../Components/Navbar";
 
 const Login = () => {
-  const [username, setUsername] = useState("");
-  const [password, setPassword] = useState("");
+  const [username, setUsername] = useState("Randeep");
+  const [password, setPassword] = useState("123");
 
   const navigate = useNavigate();
   const { login, isAuthenticated } = useAuth();
