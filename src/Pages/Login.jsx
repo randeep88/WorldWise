@@ -4,8 +4,8 @@ import { useAuth } from "../Context/AuthContext";
 import Navbar from "../Components/Navbar";
 
 const Login = () => {
-  const [username, setUsername] = useState("Randeep");
-  const [password, setPassword] = useState("123");
+  const [username, setUsername] = useState("");
+  const [password, setPassword] = useState("");
 
   const navigate = useNavigate();
   const { login, isAuthenticated } = useAuth();
