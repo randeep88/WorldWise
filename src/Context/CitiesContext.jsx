@@ -10,6 +10,7 @@ const CitiesContext = createContext();
 
 const CitiesProvider = ({ children }) => {
   const [cities, setCities] = useState([]);
+  console.log(cities)
   const [isLoading, setIsLoading] = useState(false);
   const [currentCity, setCurrentCity] = useState({});
 
@@ -31,8 +32,9 @@ const CitiesProvider = ({ children }) => {
   async function getCity(id) {
     try {
       setIsLoading(true);
-      const res = await fetch(`https://cities-data-1-ibt6.onrender.com/${id}`);
+      const res = await fetch(`https://cities-data-1-ibt6.onrender.com/cities/${id}`);
       const data = await res.json();
+      console.log(data)
       setCurrentCity(data);
       setIsLoading(false);
     } catch (err) {

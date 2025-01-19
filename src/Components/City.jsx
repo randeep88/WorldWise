@@ -15,18 +15,17 @@ const formatDate = (date) =>
 const City = () => {
   const navigate = useNavigate();
   const { id } = useParams();
+  console.log(id);
   const { getCity, currentCity, isLoading } = useCities();
 
-  useEffect(
-    function () {
-      getCity(id);
-    },
-    [id]
-  );
+  useEffect(() => {
+    getCity(id);
+  }, [id]);
 
   const { cityName, emoji, date, notes } = currentCity;
+  console.log(currentCity)
 
-  const [searchParams, setSearchParams] = useSearchParams();
+  const [searchParams] = useSearchParams();
 
   const lat = searchParams.get("lat");
   const lng = searchParams.get("lng");
