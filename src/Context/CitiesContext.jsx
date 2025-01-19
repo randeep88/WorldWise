@@ -17,7 +17,7 @@ const CitiesProvider = ({ children }) => {
     async function fetchCities() {
       try {
         setIsLoading(true);
-        const res = await fetch("https://cities-data-7fo9.onrender.com/cities");
+        const res = await fetch("https://cities-data-1-ibt6.onrender.com/cities");
         const data = await res.json();
         setCities(data);
         setIsLoading(false);
@@ -31,7 +31,7 @@ const CitiesProvider = ({ children }) => {
   async function getCity(id) {
     try {
       setIsLoading(true);
-      const res = await fetch(`https://cities-data-7fo9.onrender.com/cities/${id}`);
+      const res = await fetch(`https://cities-data-1-ibt6.onrender.com/${id}`);
       const data = await res.json();
       setCurrentCity(data);
       setIsLoading(false);
@@ -43,7 +43,7 @@ const CitiesProvider = ({ children }) => {
   async function createCity(newCity) {
     try {
       setIsLoading(true);
-      const res = await fetch(`https://cities-data-7fo9.onrender.com/cities`, {
+      const res = await fetch(`https://cities-data-1-ibt6.onrender.com/cities`, {
         method: "POST",
         body: JSON.stringify(newCity),
         headers: {
