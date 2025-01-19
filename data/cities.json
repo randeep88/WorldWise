@@ -1,0 +1,52 @@
+{
+  "cities": [
+    {
+      "id": "ec11",
+      "cityName": "Mansa",
+      "country": "India",
+      "date": "2025-01-20T10:06:22.000Z",
+      "emoji": "🇮🇳",
+      "notes": "sasural",
+      "position": {
+        "lat": "29.944131647134963",
+        "lng": "75.46514140334598"
+      }
+    },
+    {
+      "id": "5a9c",
+      "cityName": "Sirsa",
+      "country": "India",
+      "date": "2025-01-18T10:06:46.270Z",
+      "emoji": "🇮🇳",
+      "notes": "home",
+      "position": {
+        "lat": "29.54078604729716",
+        "lng": "75.05037436694107"
+      }
+    },
+    {
+      "id": "29b0",
+      "cityName": "Suratgarh",
+      "country": "India",
+      "date": "2025-01-15T04:02:54.000Z",
+      "emoji": "🇮🇳",
+      "notes": "jvkhjvkjh",
+      "position": {
+        "lat": "29.331366198276328",
+        "lng": "73.81730171039673"
+      }
+    },
+    {
+      "id": "cde8",
+      "cityName": "Al ‘Udayd",
+      "country": "Saudi Arabia",
+      "date": "2025-01-19T04:16:22.428Z",
+      "emoji": "🇸🇦",
+      "notes": "unknown city",
+      "position": {
+        "lat": "21.434041229470125",
+        "lng": "54.84512626245297"
+      }
+    }
+  ]
+}

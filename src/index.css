@@ -1,0 +1,21 @@
+@import "https://unpkg.com/leaflet@1.9.4/dist/leaflet.css";
+@import "react-datepicker/dist/react-datepicker.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: 'Montserrat-Regular';
+    src: url('/fonts/roboto/Roboto-Regular.woff2') format('woff2'),
+  }
+
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    background-color: #222222;
+  }
